@@ -1,0 +1,204 @@
+.proposals {
+  background-color: $main-color-background;
+}
+
+.proposals__wrapper {
+  padding: 90px 50px 115px;
+}
+
+.proposals__heading {
+  @include reset;
+  margin-bottom: 52px;
+
+  font-family: $secondary-fonts;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: #ffffff;
+}
+
+.proposals__list {
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.proposals__card {
+  position: relative;
+  padding: 50px 160px 510px 44px;
+  margin-bottom: 10px;
+  margin-right: 30px;
+
+  width: calc((100% - 60px) / 3);
+
+  font-family: $secondary-fonts;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #344046;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    width: 63px;
+    height: 63px;
+
+    bottom: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $main-blue-color;
+    background-image: url("../img/arrow-right.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+.proposals__card--production {
+  background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/production-1x.jpg");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/production-2x.jpg");
+  }
+}
+
+.proposals__card--installing {
+  background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/installing-1x.jpg");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/installing-2x.jpg");
+  }
+}
+
+.proposals__card--equipment {
+  background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/equipments-1x.jpg");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/equipments-2x.jpg");
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .proposals__wrapper {
+    padding: 50px 26px 33px 25px;
+  }
+
+  .proposals__heading {
+    margin-bottom: 43px;
+    padding-right: 90px;
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .proposals__list {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .proposals__card {
+    margin-bottom: 46px;
+    margin-right: 0;
+    padding: 40px 500px 156px 45px;
+
+    width: 100%;
+
+    background-size: cover;
+  }
+
+  .proposals__card--production {
+    background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/production-tablet-1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/production-tablet-2x.jpg");
+    }
+  }
+
+  .proposals__card--installing {
+    background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/installing-tablet-1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/installing-tablet-2x.jpg");
+    }
+  }
+
+  .proposals__card--equipment {
+    padding-top: 50px;
+    padding-right: 510px;
+    padding-bottom: 147px;
+    background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/equipments-tablet-1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/equipments-tablet-2x.jpg");
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .proposals__wrapper {
+    padding: 50px 15px 35px;
+  }
+
+  .proposals__heading {
+    padding: 0 0 0 10px;
+    margin-bottom: 42px;
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  .proposals__card {
+    margin-bottom: 30px;
+    padding: 21px 63px 173px 35px;
+    min-width: 290px;
+    min-height: 256px;
+  }
+
+  .proposals__card--production {
+    background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/production-mobile-1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/production-mobile-2x.jpg");
+    }
+  }
+
+  .proposals__card--installing {
+    background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/installing-mobile-1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/installing-mobile-2x.jpg");
+    }
+  }
+
+  .proposals__card--equipment {
+    padding: 31px 83px 163px 35px;
+    background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/equipments-mobile-1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/equipments-mobile-2x.jpg");
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .proposals__wrapper {
+    padding-left: 214px;
+    padding-right: 200px;
+  }
+
+  .proposals__list {
+    max-width: 1170px;
+    justify-content: flex-start;
+  }
+}
