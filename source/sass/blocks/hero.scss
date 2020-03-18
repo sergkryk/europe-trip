@@ -13,14 +13,18 @@
   padding-top: 184px;
   padding-bottom: 297px;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.hero__wrapper {
+  width: 420px;
+  margin-right: 50px;
 }
 
 .hero__title {
   @include reset;
-  max-width: 40%;
   margin-bottom: 28px;
+  padding-right: 30px;
 
   font-family: $main-fonts;
   font-weight: 600;
@@ -32,7 +36,6 @@
 
 .hero__description {
   @include reset;
-  max-width: 40%;
   margin-bottom: 34px;
   padding-right: 80px;
 
@@ -46,9 +49,9 @@
 }
 
 .hero__link {
+  display: inline-block;
   position: relative;
   padding: 30px 179px 30px 40px;
-  margin-right: 130px;
 
   font-weight: 600;
   font-size: 12px;
@@ -69,25 +72,100 @@
 
 @media (max-width: $desktop-width) {
   .hero__container {
-    display: block;
+    padding: 60px 0 83px 0;
+  }
+
+  .hero__wrapper {
+    width: 100%;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .hero__title {
-    text-align: center;
-    max-width: 100%;
-    margin: 0 0 0 0;
+    max-width: 60%;
+    padding: 0;
+    margin: 0 0 16px;
+
     font-size: 30px;
     line-height: 150%;
+    letter-spacing: -0.1px;
   }
 
   .hero__description {
-    margin: 0;
-    padding: 0;
-    max-width: 100%;
+    margin: 0 0 9px;
+    padding: 0 30px;
+    max-width: 60%;
     text-align: center;
   }
 
   .hero__link {
+    margin: 0;
+    padding: 19px 107px 19px 40px;
 
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 2px;
+  }
+
+  .hero__arrow  {
+    right: 40px;
+    top: 16px;
+  }
+}
+@media (max-width: $tablet-width) {
+  .hero {
+    position: relative;
+    background-image: none;
+
+    &::after {
+      content: "";
+      z-index: -1;
+
+      position: absolute;
+      top: 0;
+
+      width: 100%;
+      height: 235px;
+
+      background-image: url(../img/hero-1x.jpg);
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url(../img/hero-2x.jpg);
+    }
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: left 51% top;
+    }
+  }
+
+  .hero__container {
+    padding: 82px 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__title {
+    padding: 0 20px 0 25px;
+    max-width: 100%;
+    width: 300px;
+    margin-bottom: 100px;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: normal;
+    text-align: center;
+  }
+
+  .hero__description {
+    padding: 0 5%;
+    max-width: 100%;
+    margin-bottom: 21px;
+    color: $main-color-text;
+  }
+
+  .hero__link {
+    padding: 19px 145px 19px 40px;
   }
 }
