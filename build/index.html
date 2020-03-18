@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +8,22 @@
   <title>Путешествия по Европе</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
   <header class="header container">
-      <a href="#" class="header__logo" aria-label="Главная страница">
-        <svg class="header__icon" width="57" height="22" aria-label="Логотип нашего сайта">
-          <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
-        </svg>
-      </a>
-      <a href="#" class="header__menu-btn" aria-label="Главное меню"></a>
-      <a href="#" class="header__link">О путешествии</a>
-      <a href="#" class="header__link header__link--red header__link--price">Цены</a>
-      <a href="tel:+749978468446" class="header__link header__link--red header__link--phone">+7 (499) -784-684-46
-        <svg class="header__icon" width="30" height="30" aria-label="Логотип нашего сайта">
-          <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
-        </svg>
-      </a>
+    <a href="#" class="header__logo" aria-label="Главная страница">
+      <svg class="header__icon" width="57" height="22" aria-label="Логотип нашего сайта">
+        <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+      </svg>
+    </a>
+    <a href="#" class="header__menu-btn" aria-label="Главное меню"></a>
+    <a href="#" class="header__link">О путешествии</a>
+    <a href="#" class="header__link header__link--red header__link--price">Цены</a>
+    <a href="tel:+749978468446" class="header__link header__link--red header__link--phone">+7 (499) -784-684-46
+      <svg class="header__icon" width="30" height="30" aria-label="Логотип нашего сайта">
+        <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
+      </svg>
+    </a>
   </header>
   <main>
     <section class="hero">
@@ -42,55 +44,94 @@
         </div>
       </div>
     </section>
-    <!-- <section class="places">
-      <div class="places__container">
-        <h2 class="places__title">
-          Места посещения
-        </h2>
-        <p class="places__description">
-          Вы можете выбрать полный тур или частичный, с посещением первых 3 мест
-        </p>
+    <section class="places container">
+      <h2 class="places__title">
+        Места посещения
+      </h2>
+      <p class="places__description">
+        Вы можете выбрать полный тур или частичный, с посещением первых 3 мест
+      </p>
+      <div class="places__list">
+        <a href="#" class="places__item">
+          <figure class="places__figure">
+            <picture>
+              <source media="(min-resolution: 144dpi), (min-resolution: 1.5dppx)" srcset="img/greece-2x.jpg">
+              <img class="places__image" src="img/greece-1x.jpg" width="350" height="430" alt="Греция">
+            </picture>
+            <figcaption class="places__caption">Греция</figcaption>
+          </figure>
+        </a>
+        <a href="#" class="places__item">
+          <figure class="places__figure">
+            <picture>
+              <source media="(min-resolution: 144dpi), (min-resolution: 1.5dppx)" srcset="img/albania-2x.jpg">
+              <img class="places__image" src="img/albania-1x.jpg" width="350" height="430" alt="Албания">
+            </picture>
+            <figcaption class="places__caption">Албания</figcaption>
+          </figure>
+        </a>
+        <a href="#" class="places__item">
+          <figure class="places__figure">
+            <picture>
+              <source media="(min-resolution: 144dpi), (min-resolution: 1.5dppx)" srcset="img/macedonia-2x.jpg">
+              <img class="places__image" src="img/macedonia-1x.jpg" width="350" height="430" alt="Македония">
+            </picture>
+            <figcaption class="places__caption">Македония</figcaption>
+          </figure>
+        </a>
+        <a href="#" class="places__item">
+          <figure class="places__figure">
+            <picture>
+              <source media="(min-resolution: 144dpi), (min-resolution: 1.5dppx)" srcset="img/chern-2x.jpg">
+              <img class="places__image" src="img/chern-1x.jpg" width="350" height="430" alt="Черногория">
+            </picture>
+            <figcaption class="places__caption">Черногория</figcaption>
+          </figure>
+        </a>
+        <a href="#" class="places__item">
+          <figure class="places__figure">
+            <picture>
+              <source media="(min-resolution: 144dpi), (min-resolution: 1.5dppx)" srcset="img/choratia-2x.jpg">
+              <img class="places__image" src="img/choratia-1x.jpg" width="350" height="430" alt="Хорватия">
+            </picture>
+            <figcaption class="places__caption">Хорватия</figcaption>
+          </figure>
+        </a>
       </div>
     </section>
     <div class="wrapper">
       <section class="countries">
         <h2 class="countries__title visually-hidden">Описание стран</h2>
-        <div class="countries__list">
-          <a href="#" class="countries__toggle">Греция</a>
-          <a href="#" class="countries__toggle">Албания</a>
-          <a href="#" class="countries__toggle">Македония</a>
-          <a href="#" class="countries__toggle">Черногория</a>
-          <a href="#" class="countries__toggle">Хорватия</a>
-        </div>
-        <section class="countries__details">
-          <div class="countries__wrapper">
-            <h3 class="countries__subtitle">Греция</h3>
-            <p class="countries__description">
-              На севере Греции находится один из крупнейших комплексов монастырей,
-              расположенных на вершинах скал. Название его «Метеора» буквально переводится
-              как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции.
-              После покарения скал из песчанника и обломочной горной породы, достигающих в
-              высоту 600 метров, наградой будет неописуемая красота природы и атмосфера,
-              царящая в монастырях Метеоры.
-            </p>
-            <a href="#" class="countries__button">Купить тур сейчас</a>
-          </div>
-          <img src="" alt="Живописный вид" class="countries__img">
-          <div class="countries__feedback-card">
-            <h4 class="countries__feedback-title">Отзывы</h4>
-            <p class="countries__feedback-text">
-              Метеоры в Греции можно сравнить разве что с Монсерратт в Испании.
-              Такие же высоченные скалы. Но здесь потрясает масштаб.
-              Огромная территория, высоко в горах.
-              Ощущение такое, как будто стоишь на краю света!
-            </p>
-            <div class="countries__feedback-author">
-              <img src="" alt="Фото пользователя" class="countries__feedback-avatar">
-              <span class="countries__feedback-name">Влада Голицина</span>
+        <div class="wrapper">
+          <section class="countries__details">
+            <div class="countries__wrapper">
+              <h3 class="countries__subtitle">Греция</h3>
+              <p class="countries__description">
+                На севере Греции находится один из крупнейших комплексов монастырей,
+                расположенных на вершинах скал. Название его «Метеора» буквально переводится
+                как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции.
+                После покарения скал из песчанника и обломочной горной породы, достигающих в
+                высоту 600 метров, наградой будет неописуемая красота природы и атмосфера,
+                царящая в монастырях Метеоры.
+              </p>
+              <a href="#" class="countries__button">Купить тур сейчас</a>
             </div>
-          </div>
-        </section>
-      </section>
+            <img src="" alt="Живописный вид" class="countries__img">
+            <div class="countries__feedback-card">
+              <h4 class="countries__feedback-title">Отзывы</h4>
+              <p class="countries__feedback-text">
+                Метеоры в Греции можно сравнить разве что с Монсерратт в Испании.
+                Такие же высоченные скалы. Но здесь потрясает масштаб.
+                Огромная территория, высоко в горах.
+                Ощущение такое, как будто стоишь на краю света!
+              </p>
+              <div class="countries__feedback-author">
+                <img src="" alt="Фото пользователя" class="countries__feedback-avatar">
+                <span class="countries__feedback-name">Влада Голицина</span>
+              </div>
+            </div>
+          </section>
+      </div></section>
       <section class="price">
         <h2 class="price__title visually-hidden">Наши цены</h2>
         <div class="price__card">
@@ -125,7 +166,7 @@
         <div class="price__details">
           <h3 class="price__details-title">Цены</h3>
           <p class="price__details-text">
-            Специально для Вас  мы разработали 2 пакета цен с разными условиями,
+            Специально для Вас мы разработали 2 пакета цен с разными условиями,
             отталкиваясь от Ваших потребностей и возможностей.
             Выберите для себя лучший вариант отпуска и отдохните на все 100%!
           </p>
@@ -191,6 +232,7 @@
         а также являются оличным времяпрепровождением
       </p>
     </div>
-  </footer> -->
-</main></body>
+  </footer>
+</body>
+
 </html>
