@@ -56,7 +56,7 @@
           <figure class="places__figure">
             <picture>
               <source media="(min-resolution: 144dpi), (min-resolution: 1.5dppx)" srcset="img/greece-2x.jpg">
-              <img class="places__image" src="img/greece-1x.jpg" width="350" height="430" alt="Греция">
+              <img class="places__image places__image--greece" src="img/greece-1x.jpg" width="350" height="430" alt="Греция">
             </picture>
             <figcaption class="places__caption">Греция</figcaption>
           </figure>
@@ -70,7 +70,7 @@
             <figcaption class="places__caption">Албания</figcaption>
           </figure>
         </a>
-        <a href="#" class="places__item">
+        <a href="#" class="places__item places__item--macedonia">
           <figure class="places__figure">
             <picture>
               <source media="(min-resolution: 144dpi), (min-resolution: 1.5dppx)" srcset="img/macedonia-2x.jpg">
@@ -79,7 +79,7 @@
             <figcaption class="places__caption">Македония</figcaption>
           </figure>
         </a>
-        <a href="#" class="places__item">
+        <a href="#" class="places__item places__item--chern">
           <figure class="places__figure">
             <picture>
               <source media="(min-resolution: 144dpi), (min-resolution: 1.5dppx)" srcset="img/chern-2x.jpg">
@@ -100,39 +100,49 @@
       </div>
     </section>
     <div class="wrapper">
-      <section class="countries">
-        <h2 class="countries__title visually-hidden">Описание стран</h2>
-        <div class="wrapper">
-          <section class="countries__details">
-            <div class="countries__wrapper">
-              <h3 class="countries__subtitle">Греция</h3>
-              <p class="countries__description">
-                На севере Греции находится один из крупнейших комплексов монастырей,
-                расположенных на вершинах скал. Название его «Метеора» буквально переводится
-                как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции.
-                После покарения скал из песчанника и обломочной горной породы, достигающих в
-                высоту 600 метров, наградой будет неописуемая красота природы и атмосфера,
-                царящая в монастырях Метеоры.
-              </p>
-              <a href="#" class="countries__button">Купить тур сейчас</a>
+      <section class="country container">
+        <h2 class="country__title visually-hidden">Описание стран</h2>
+        <div class="country__tabs">
+          <a class="country__tab country__tab--active" href="#greece">Греция</a>
+          <a class="country__tab" href="#albania">Албания</a>
+          <a class="country__tab" href="#macedonia">Македония</a>
+          <a class="country__tab" href="#chern">Черногория</a>
+          <a class="country__tab" href="#chroatia">Хорватия</a>
+        </div>
+        <section class="country__details" id="greece">
+          <div class="country__wrapper">
+            <h3 class="country__subtitle">Греция</h3>
+            <p class="country__description">
+              На севере Греции находится один из крупнейших комплексов монастырей,
+              расположенных на вершинах скал. Название его «Метеора» буквально переводится
+              как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции.
+              После покарения скал из песчанника и обломочной горной породы, достигающих в
+              высоту 600 метров, наградой будет неописуемая красота природы и атмосфера,
+              царящая в монастырях Метеоры.
+            </p>
+            <a href="#" class="country__button">Купить тур сейчас</a>
+          </div>
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/greece-detailed-1x.jpg 1x, img/greece-detailed-2x.jpg 2x">
+            <source media="(max-width: 1023px)" srcset="img/greece-detailed-tablet-1x.jpg 1x, img/greece-detailed-tablet-2x.jpg 2x">
+            <img class="country__image" src="img/greece-detailed-1x.jpg" width="430" height="596" alt="Греция" srcset="img/greece-detailed-2x.jpg 2x">
+          </picture>
+          <div class="country__feedback-card">
+            <h4 class="country__feedback-title">Отзывы</h4>
+            <p class="country__feedback-text">
+              Метеоры в Греции можно сравнить разве что с Монсерратт в Испании.
+              Такие же высоченные скалы. Но здесь потрясает масштаб.
+              Огромная территория, высоко в горах.
+              Ощущение такое, как будто стоишь на краю света!
+            </p>
+            <div class="country__feedback-author">
+              <img src="img/avatar.jpg" alt="Фото пользователя" class="country__feedback-avatar" width="38" height="38">
+              <span class="country__feedback-name">Влада Голицина</span>
             </div>
-            <img src="" alt="Живописный вид" class="countries__img">
-            <div class="countries__feedback-card">
-              <h4 class="countries__feedback-title">Отзывы</h4>
-              <p class="countries__feedback-text">
-                Метеоры в Греции можно сравнить разве что с Монсерратт в Испании.
-                Такие же высоченные скалы. Но здесь потрясает масштаб.
-                Огромная территория, высоко в горах.
-                Ощущение такое, как будто стоишь на краю света!
-              </p>
-              <div class="countries__feedback-author">
-                <img src="" alt="Фото пользователя" class="countries__feedback-avatar">
-                <span class="countries__feedback-name">Влада Голицина</span>
-              </div>
-            </div>
-          </section>
-      </div></section>
-      <section class="price">
+          </div>
+        </section>
+      </section>
+      <section class="price container">
         <h2 class="price__title visually-hidden">Наши цены</h2>
         <div class="price__card">
           <h3 class="price__subtitle">Комплексный</h3>
