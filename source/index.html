@@ -56,7 +56,8 @@
           <figure class="places__figure">
             <picture>
               <source media="(min-resolution: 144dpi), (min-resolution: 1.5dppx)" srcset="img/greece-2x.jpg">
-              <img class="places__image places__image--greece" src="img/greece-1x.jpg" width="350" height="430" alt="Греция">
+              <img class="places__image places__image--greece" src="img/greece-1x.jpg" width="350" height="430"
+                alt="Греция">
             </picture>
             <figcaption class="places__caption">Греция</figcaption>
           </figure>
@@ -123,8 +124,7 @@
             <a href="#" class="country__button">Купить тур сейчас</a>
           </div>
           <picture>
-            <source media="(max-width: 767px)"
-              srcset="img/greece-detailed-1x.jpg 1x, img/greece-detailed-2x.jpg 2x">
+            <source media="(max-width: 767px)" srcset="img/greece-detailed-1x.jpg 1x, img/greece-detailed-2x.jpg 2x">
             <source media="(max-width: 1023px)"
               srcset="img/greece-detailed-tablet-1x.jpg 1x, img/greece-detailed-tablet-2x.jpg 2x">
             <img class="country__image" src="img/greece-detailed-1x.jpg" width="430" height="596" alt="Греция"
@@ -147,46 +147,82 @@
       </section>
       <section class="price container">
         <h2 class="price__title visually-hidden">Наши цены</h2>
-        <div class="price__card">
-          <h3 class="price__subtitle">Комплексный</h3>
-          <span class="price__value">$1999</span>
+        <div class="price__card price__card--hovered">
+          <h3 class="price__subtitle">Комплексный <span>$1999</span></h3>
           <p class="price__text">
             Ознакомьтесь с перечнем того, что входит в данный пакет
           </p>
           <ul class="price__list">
-            <li class="price__item">Разработанный маршрут с гидом группы</li>
-            <li class="price__item">Перелет, трансфер и проживание в отелях</li>
-            <li class="price__item">Завтраки, ужины в отелях и ланчи на природе</li>
-            <li class="price__item">Экскурсии по удивительно красивым местам Европы</li>
+            <li class="price__item">Разработанный маршрут с гидом группы
+              <svg class="price__icon" width="14" height="14" aria-label="Логотип нашего сайта">
+                <use xlink:href="img/sprite_auto.svg#icon-tick"></use>
+              </svg>
+            </li>
+            <li class="price__item">Перелет, трансфер и проживание в отелях
+              <svg class="price__icon" width="14" height="14" aria-label="Логотип нашего сайта">
+                <use xlink:href="img/sprite_auto.svg#icon-tick"></use>
+              </svg>
+            </li>
+            <li class="price__item">Завтраки, ужины в отелях и ланчи на природе
+              <svg class="price__icon" width="14" height="14" aria-label="Логотип нашего сайта">
+                <use xlink:href="img/sprite_auto.svg#icon-tick"></use>
+              </svg>
+            </li>
+            <li class="price__item">Экскурсии по удивительно красивым местам Европы
+              <svg class="price__icon" width="14" height="14" aria-label="Логотип нашего сайта">
+                <use xlink:href="img/sprite_auto.svg#icon-tick"></use>
+              </svg>
+            </li>
           </ul>
           <a href="#" class="price__link">Купить тур сейчас</a>
         </div>
-        <div class="price__card">
-          <h3 class="price__subtitle">Экономный</h3>
-          <span class="price__value">$1399</span>
+        <div class="price__card price__card--hovered">
+          <h3 class="price__subtitle">Экономный <span>$1399</span></h3>
           <p class="price__text">
             Ознакомьтесь с перечнем того, что входит в данный пакет
           </p>
-          <ul class="price__list">
-            <li class="price__item">Разработанный маршрут с гидом группы</li>
-            <li class="price__item">Перелет и трансфер</li>
-            <li class="price__item">Проживание в хостелах при отелях</li>
-            <li class="price__item">Только завтраки в отелях</li>
-            <li class="price__item">Экскурсии по удивительно красивым местам Европы</li>
+          <ul class="price__list price__list--economy">
+            <li class="price__item price__item--economy">Разработанный маршрут с гидом группы
+              <svg class="price__icon" width="14" height="14" aria-label="Логотип нашего сайта">
+                <use xlink:href="img/sprite_auto.svg#icon-tick"></use>
+              </svg>
+            </li>
+            <li class="price__item price__item--economy">Перелет и трансфер
+              <svg class="price__icon" width="14" height="14" aria-label="Логотип нашего сайта">
+                <use xlink:href="img/sprite_auto.svg#icon-tick"></use>
+              </svg>
+            </li>
+            <li class="price__item price__item--economy">Проживание в хостелах при отелях
+              <svg class="price__icon" width="14" height="14" aria-label="Логотип нашего сайта">
+                <use xlink:href="img/sprite_auto.svg#icon-tick"></use>
+              </svg>
+            </li>
+            <li class="price__item price__item--economy">Только завтраки в отелях
+              <svg class="price__icon" width="14" height="14" aria-label="Логотип нашего сайта">
+                <use xlink:href="img/sprite_auto.svg#icon-tick"></use>
+              </svg>
+            </li>
+            <li class="price__item price__item--economy">Экскурсии по удивительно красивым местам Европы
+              <svg class="price__icon" width="14" height="14" aria-label="Логотип нашего сайта">
+                <use xlink:href="img/sprite_auto.svg#icon-tick"></use>
+              </svg>
+            </li>
           </ul>
           <a href="#" class="price__link">Купить тур сейчас</a>
         </div>
-        <div class="price__details">
+        <div class="price__card price__card--details">
           <h3 class="price__details-title">Цены</h3>
           <p class="price__details-text">
             Специально для Вас мы разработали 2 пакета цен с разными условиями,
             отталкиваясь от Ваших потребностей и возможностей.
             Выберите для себя лучший вариант отпуска и отдохните на все 100%!
           </p>
-          <div class="price__phone">
-            <p class="">Свяжитесь с нами</p>
-            <a href="tel:+749978468446" class="price__number">+7(499)-784-684-46</a>
-          </div>
+          <p class="price__call">Свяжитесь с нами</p>
+          <a href="tel:+749978468446" class="price__number">+7 (499) -784-684-46
+            <svg class="price__phone-icon" width="30" height="30" aria-label="Логотип нашего сайта">
+              <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
+            </svg>
+          </a>
         </div>
       </section>
     </div>
