@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   padding-right: 0;
+  margin-bottom: 138px;
 }
 
 .price__card {
@@ -185,6 +186,7 @@
     justify-content: center;
     padding-right: 0;
     padding-left: 0;
+    margin-bottom: 123px;
   }
 
   .price__card {
@@ -293,6 +295,7 @@
 @media (max-width: $tablet-width) {
   .price {
     padding: 0 16px 0;
+    margin-bottom: 18px;
   }
 
   .price__card {

@@ -224,17 +224,21 @@
       </section>
     </div>
     <section class="form">
-      <h2 class="visually-hidden">Форма обратной связи</h2>
-      <div class="form__card">
-        <h3 class="form__title">
-          У Вас остались вопросы?
-        </h3>
-        <p class="form__text">
-          Оставьте свой номер или e-mail и мы свяжемся с Вами
-        </p>
-        <form action="GET" class="form__inputs">
-          <input type="text" class="form__input">
-          <input type="text" class="form__input">
+      <div class="form__wrapper container">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <form class="form__card" action="GET">
+          <h3 class="form__title">
+            У Вас остались вопросы?
+          </h3>
+          <p class="form__text">
+            Оставьте свой номер или e-mail и мы свяжемся с Вами
+          </p>
+          <label class="form__label form__label--star" aria-label="Поле ввода номера телефона">
+            <input type="text" class="form__input form__input--star" placeholder="+7 Введите 10 цифр номера">
+          </label>
+          <label class="form__label" aria-label="Поле ввода электронного адреса">
+            <input type="text" class="form__input" placeholder="E-mail">
+          </label>
           <button class="form__button" type="submit">Отправить</button>
         </form>
       </div>
