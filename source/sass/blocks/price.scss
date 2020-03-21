@@ -42,6 +42,7 @@
   position: absolute;
   right: 0;
   font-size: 25px;
+
   @media (max-width: 1160px) {
     left: 0;
     bottom: -32px;
@@ -92,6 +93,7 @@
 
   width: 100%;
   padding: 30px 68px;
+
   @media (max-width: 1205px) {
     padding: 30px 20px;
     text-align: center;
@@ -102,7 +104,7 @@
   line-height: 15px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 
   background-color: $main-color;
 }
@@ -111,6 +113,7 @@
 .price__card--details {
   width: calc(100% - 800px);
   padding: 111px 0 0 81px;
+
   @media (max-width: 1160px) {
     padding-left: 10px;
   }
@@ -146,6 +149,7 @@
   @include reset;
   margin-bottom: 12px;
   padding-left: 45px;
+
   @media (max-width: 1090px) {
     padding-left: 0;
     font-size: 20px;
@@ -158,6 +162,7 @@
 .price__number {
   position: relative;
   padding-left: 45px;
+
   @media (max-width: 1090px) {
     padding-left: 0;
     font-size: 18px;
@@ -227,7 +232,7 @@
   .price__list {
     @include reset-list;
     padding-left: 50px;
-    padding-right: 20px;;
+    padding-right: 20px;
     margin-bottom: 20px;
   }
 
@@ -292,6 +297,7 @@
     text-decoration: underline;
   }
 }
+
 @media (max-width: $tablet-width) {
   .price {
     padding: 0 16px 0;

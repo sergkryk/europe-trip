@@ -1,9 +1,10 @@
 .hero {
   width: 100%;
 
-  background-image: url(../img/hero-1x.jpg);
+  background-image: url("../img/hero-1x.jpg");
+
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url(../img/hero-2x.jpg);
+    background-image: url("../img/hero-2x.jpg");
   }
   background-repeat: no-repeat;
   background-size: cover;
@@ -39,9 +40,7 @@
   margin-bottom: 34px;
   padding-right: 80px;
 
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 170%;
   letter-spacing: -0.466667px;
@@ -63,7 +62,7 @@
   background-color: $main-color;
 }
 
-.hero__arrow  {
+.hero__arrow {
   position: absolute;
   right: 38px;
 
@@ -110,11 +109,12 @@
     letter-spacing: 2px;
   }
 
-  .hero__arrow  {
+  .hero__arrow {
     right: 40px;
     top: 16px;
   }
 }
+
 @media (max-width: $tablet-width) {
   .hero {
     position: relative;
@@ -130,10 +130,11 @@
       width: 100%;
       height: 235px;
 
-      background-image: url(../img/hero-1x.jpg);
+      background-image: url("../img/hero-1x.jpg");
+
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url(../img/hero-2x.jpg);
-    }
+        background-image: url("../img/hero-2x.jpg");
+      }
       background-repeat: no-repeat;
       background-size: cover;
       background-position: left 51% top;

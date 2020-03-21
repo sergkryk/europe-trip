@@ -1,9 +1,14 @@
+.form {
+  margin-bottom: 169px;
+}
+
 .form__wrapper {
   padding: 70px 10px 70px 70px;
+
   @media (max-width: 1210px) {
     padding-right: 30px;
   }
-  background-image: url(../img/sunset-1x.jpg);
+  background-image: url("../img/sunset-1x.jpg");
   background-repeat: no-repeat;
   background-position: left 31px top;
 
@@ -21,7 +26,7 @@
   text-align: center;
 
   border-radius: 5px;
-  box-shadow: 0px 4px 30px rgba(41, 54, 66, 0.1);
+  box-shadow: 0 4px 30px rgba(41, 54, 66, 0.1);
 }
 
 .form__title {
@@ -65,7 +70,7 @@
     width: 12px;
     height: 12px;
 
-    background-image: url(../img/star.svg);
+    background-image: url("../img/star.svg");
     background-repeat: no-repeat;
   }
 }
@@ -95,13 +100,17 @@
   line-height: 15px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 
   background-color: $main-color;
   border: none;
 }
 
 @media (max-width: $desktop-width) {
+  .form {
+    margin-bottom: 80px;
+  }
+
   .form__wrapper {
     padding: 70px 55px 75px 55px;
     background-position: left top;
@@ -133,17 +142,18 @@
 
 @media (max-width: $tablet-width) {
   .form {
-    background-color: #FBF8F8;
+    background-color: #fbf8f8;
+    margin-bottom: 70px;
   }
 
   .form__wrapper {
-    padding: 50px 16px 75px 16px;
+    padding: 50px 16px 50px 16px;
     background-image: none;
   }
 
   .form__card {
     box-shadow: none;
-    background-color: #FBF8F8;
+    background-color: #fbf8f8;
     padding: 0;
   }
 

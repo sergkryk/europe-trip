@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -125,7 +125,7 @@
           <picture>
             <source media="(max-width: 767px)" srcset="img/greece-detailed-1x.jpg 1x, img/greece-detailed-2x.jpg 2x">
             <source media="(max-width: 1023px)" srcset="img/greece-detailed-tablet-1x.jpg 1x, img/greece-detailed-tablet-2x.jpg 2x">
-            <img class="country__image" src="img/greece-detailed-1x.jpg" width="430" height="596" alt="Греция" srcset="img/greece-detailed-2x.jpg 2x">
+            <img class="country__image" src="img/greece-detailed-1x.jpg" width="430" height="596" srcset="img/greece-detailed-2x.jpg 2x" alt="Греция">
           </picture>
           <div class="country__feedback-card">
             <h4 class="country__feedback-title">Отзывы</h4>
@@ -244,38 +244,46 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
-    <div class="footer_column">
+  <footer class="footer container">
+    <div class="footer__column footer__column--trips">
       <h3 class="footer__title">Следующие путешествия</h3>
-      <div class="footer__trip-list">
-        <a href="#" class="footer_trip-item">Марсель</a>
-        <a href="#" class="footer_trip-item">Ним</a>
-        <a href="#" class="footer_trip-item">Монпелье</a>
-        <a href="#" class="footer_trip-item">Барселона</a>
-        <a href="#" class="footer_trip-item">Пальма</a>
+      <div class="footer__trip-list footer__trip-list--padding">
+        <a href="#" class="footer__trip-item">Марсель</a>
+        <a href="#" class="footer__trip-item">Ним</a>
+        <a href="#" class="footer__trip-item">Монпелье</a>
+        <a href="#" class="footer__trip-item">Барселона</a>
+        <a href="#" class="footer__trip-item">Пальма</a>
       </div>
       <div class="footer__trip-list">
-        <a href="#" class="footer_trip-item">Сардиния</a>
-        <a href="#" class="footer_trip-item">Палермо</a>
-        <a href="#" class="footer_trip-item">Катания</a>
-        <a href="#" class="footer_trip-item">Неаполь</a>
-        <a href="#" class="footer_trip-item">Рим</a>
+        <a href="#" class="footer__trip-item">Сардиния</a>
+        <a href="#" class="footer__trip-item">Палермо</a>
+        <a href="#" class="footer__trip-item">Катания</a>
+        <a href="#" class="footer__trip-item">Неаполь</a>
+        <a href="#" class="footer__trip-item">Рим</a>
       </div>
       <div class="footer__trip-list">
-        <a href="#" class="footer_trip-item">Корс</a>
-        <a href="#" class="footer_trip-item">Ницца</a>
-        <a href="#" class="footer_trip-item">Монако</a>
-        <a href="#" class="footer_trip-item">Динь-ле-Бен</a>
-        <a href="#" class="footer_trip-item">Гренобль</a>
+        <a href="#" class="footer__trip-item">Корс</a>
+        <a href="#" class="footer__trip-item">Ницца</a>
+        <a href="#" class="footer__trip-item">Монако</a>
+        <a href="#" class="footer__trip-item">Динь-ле-Бен</a>
+        <a href="#" class="footer__trip-item">Гренобль</a>
       </div>
     </div>
-    <div class="footer__column">
+    <div class="footer__column footer__column--contacts">
       <h3 class="footer__title">Наши контакты</h3>
-      <a href="mailto:puteshestviemechta@gmail.ru" class="footer__email">puteshestviemechta@gmail.ru</a>
-      <a href="tel:+749978468446" class="footer__phone">+7(499)-784-684-46</a>
+      <a href="mailto:puteshestviemechta@gmail.ru" class="footer__link footer__link--email">puteshestviemechta@gmail.ru
+        <svg class="footer__icon footer__icon--email" width="30" height="30" aria-label="Логотип нашего сайта">
+          <use xlink:href="img/sprite_auto.svg#icon-email"></use>
+        </svg>
+      </a>
+      <a href="tel:+749978468446" class="footer__link footer__link--phone">+7 (499) -784-684-46
+        <svg class="footer__icon footer__icon--phone" width="30" height="30" aria-label="Логотип нашего сайта">
+          <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
+        </svg>
+      </a>
     </div>
-    <div class="footer__column">
-      <h3 class="footer__title">Корпоративные путешествия</h3>
+    <div class="footer__column footer__column--coorp">
+      <h3 class="footer__title footer__title--coorp">Корпоративные путешествия</h3>
       <p class="footer__text">
         Также вы можете заказать индивидуальное путешествие под вашу компанию.
         Подобные туры очень сближают компанию, помогают поддерживать корпоративный дух,

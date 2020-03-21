@@ -1,0 +1,235 @@
+.footer {
+  padding-bottom: 60px;
+  padding-left: 32px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__column {
+  position: relative;
+  width: calc(100% / 3);
+
+  display: flex;
+  flex-wrap: wrap;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    height: 100%;
+    width: 1px;
+
+    right: -5px;
+
+    background-color: rgba(20, 21, 23, 0.3);
+  }
+}
+
+.footer__column--contacts {
+  padding-left: 94px;
+
+  @media (max-width: 1150px) {
+    padding-left: 50px;
+  }
+  flex-direction: column;
+}
+
+.footer__column--coorp {
+  padding-left: 56px;
+  padding-right: 10px;
+  border-right: none;
+
+  &::after {
+    width: 0;
+  }
+}
+
+.footer__title {
+  @include reset;
+  width: 100%;
+  margin-bottom: 19px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.footer__trip-list {
+  width: calc(100% / 3);
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__trip-item {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(20, 21, 23, 0.5);
+}
+
+.footer__text {
+  @include reset;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(20, 21, 23, 0.5);
+}
+
+.footer__link {
+  position: relative;
+  padding-left: 41px;
+  text-decoration-line: underline;
+  color: $main-color;
+}
+
+.footer__icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.footer__icon--phone {
+  stroke: #d7d9df;
+  fill: none;
+}
+
+.footer__link--email {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.footer__link--phone {
+  font-size: 16px;
+  line-height: 32px;
+}
+
+@media (max-width: $desktop-width) {
+  .footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .footer__column {
+    width: calc(100% / 2);
+    justify-content: space-between;
+
+    &::after {
+      right: -32px;
+    }
+  }
+
+  .footer__column--contacts {
+    justify-content: flex-start;
+    padding-left: 82px;
+
+    &::after {
+      width: 0;
+    }
+  }
+
+  .footer__column--coorp {
+    width: 100%;
+    margin-top: 19px;
+    padding-top: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    border-top: 1px solid rgba(20, 21, 23, 0.1);
+  }
+
+  .footer__title {
+    margin-bottom: 22px;
+  }
+
+  .footer__trip-list {
+    width: calc((100% - 10px) / 3);
+  }
+
+  .footer__link--email {
+    font-size: 0;
+    width: 120px;
+    margin-bottom: 15px;
+
+    &::after {
+      content: "Почта";
+      position: relative;
+      text-decoration-line: underline;
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .footer {
+    padding: 0;
+  }
+
+  .footer__column {
+    width: 100%;
+    padding: 0 20px 0;
+    text-align: center;
+
+    &::after {
+      width: 0;
+    }
+  }
+
+  .footer__column--coorp {
+    margin-top: 15px;
+    padding: 28px 10px 0;
+  }
+
+  .footer__column--contacts {
+    padding-top: 30px;
+    align-items: center;
+    border-top: 1px solid rgba(20, 21, 23, 0.1);
+  }
+
+  .footer__column--trips {
+    margin-bottom: 8px;
+  }
+
+  .footer__title {
+    padding-right: 10px;
+    margin-bottom: 20px;
+  }
+
+  .footer__title--coorp {
+    padding: 0 0 0 10px;
+    margin-bottom: 21px;
+  }
+
+  .footer__text {
+    padding: 0 0 0 10px;
+  }
+
+  .footer__trip-list {
+    width: 50%;
+    padding-left: 5px;
+
+    &:last-child {
+      margin-top: 12px;
+      padding-left: 0;
+      padding-right: 10px;
+      width: 100%;
+    }
+  }
+
+  .footer__trip-list--padding {
+    padding-right: 20px;
+    padding-left: 0;
+  }
+
+  .footer__link {
+    padding-left: 30px;
+  }
+
+  .footer__icon {
+    left: 12px;
+  }
+
+  .footer__icon--phone {
+    left: -10px;
+    top: -2px;
+  }
+}

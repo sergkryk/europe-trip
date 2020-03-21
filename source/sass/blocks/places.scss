@@ -45,9 +45,10 @@
   margin-right: 60px;
   margin-bottom: 101px;
   width: calc((100% - 120px) / 3);
-  border: 1px solid #1BC47D;
+  border: 1px solid #1bc47d;
 
-  &:nth-child(3n) {
+  &:nth-child(3n),
+  &:last-child {
     margin-right: 0;
   }
 }
@@ -118,7 +119,7 @@
     margin-right: 0;
     margin-bottom: 17px;
     width: calc((100% - 30px) / 2);
-    border: 1px solid #1BC47D;
+    border: 1px solid #1bc47d;
 
     &:nth-child(even) {
       margin-left: 30px;
@@ -132,6 +133,7 @@
     vertical-align: top;
   }
 }
+
 @media (max-width: $tablet-width) {
   .places {
     padding-top: 10px;

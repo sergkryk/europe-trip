@@ -1,5 +1,6 @@
 .country__tabs {
   position: relative;
+
   @include reset-list;
   margin-top: -13px;
   margin-bottom: 90px;
@@ -181,16 +182,14 @@
 }
 
 @media (max-width: $desktop-width) {
-
   .country__tabs {
-    padding-left: 37px;
+    margin-left: 37px;
     margin-bottom: 32px;
     overflow: hidden;
 
     &::after {
       width: 100%;
       height: 1px;
-
     }
   }
 
@@ -243,14 +242,14 @@
     margin-top: -339px;
   }
 }
-@media (max-width: $tablet-width) {
 
+@media (max-width: $tablet-width) {
   .country__wrapper {
     margin-bottom: 59px;
   }
 
   .country__tabs {
-    padding-left: 17px;
+    margin-left: 17px;
     margin-bottom: 25px;
   }
 
