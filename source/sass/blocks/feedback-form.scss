@@ -9,6 +9,11 @@
     padding-right: 30px;
   }
   background-image: url("../img/sunset-1x.jpg");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/sunset-2x.jpg");
+    background-size: contain;
+  }
   background-repeat: no-repeat;
   background-position: left 31px top;
 

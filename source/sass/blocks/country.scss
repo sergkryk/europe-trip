@@ -44,6 +44,10 @@
 .country__details {
   margin-bottom: 235px;
   position: relative;
+  display: none;
+}
+
+.country__details--active {
   display: flex;
   flex-wrap: wrap;
 }

@@ -17,8 +17,8 @@
       </svg>
     </a>
     <a href="#" class="header__menu-btn" aria-label="Главное меню"></a>
-    <a href="#" class="header__link">О путешествии</a>
-    <a href="#" class="header__link header__link--red header__link--price">Цены</a>
+    <a href="#places" class="header__link">О путешествии</a>
+    <a href="#prices" class="header__link header__link--red header__link--price">Цены</a>
     <a href="tel:+749978468446" class="header__link header__link--red header__link--phone">+7 (499) -784-684-46
       <svg class="header__icon" width="30" height="30" aria-label="Логотип нашего сайта">
         <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
@@ -36,7 +36,7 @@
             В этом туре вы откроете для себя Европу в новом свете.
             Вас ждет: море, горы, а также потрясающая красота природы.
           </p>
-          <a href="#" class="hero__link">смотреть тур
+          <a href="#tabs" class="hero__link">смотреть тур
             <svg class="hero__arrow" width="16" height="16">
               <use xlink:href="img/sprite_auto.svg#icon-arrow-down"></use>
             </svg>
@@ -44,7 +44,7 @@
         </div>
       </div>
     </section>
-    <section class="places container">
+    <section id="places" class="places container">
       <h2 class="places__title">
         Места посещения
       </h2>
@@ -52,7 +52,7 @@
         Вы можете выбрать полный тур или частичный, с посещением первых 3 мест
       </p>
       <div class="places__list">
-        <a href="#" class="places__item">
+        <a href="#greece-tab" class="places__item">
           <figure class="places__figure">
             <picture>
               <source media="(min-resolution: 144dpi), (min-resolution: 1.5dppx)" srcset="img/greece-2x.jpg">
@@ -61,7 +61,7 @@
             <figcaption class="places__caption">Греция</figcaption>
           </figure>
         </a>
-        <a href="#" class="places__item">
+        <a href="#albania-tab" class="places__item">
           <figure class="places__figure">
             <picture>
               <source media="(min-resolution: 144dpi), (min-resolution: 1.5dppx)" srcset="img/albania-2x.jpg">
@@ -70,7 +70,7 @@
             <figcaption class="places__caption">Албания</figcaption>
           </figure>
         </a>
-        <a href="#" class="places__item places__item--macedonia">
+        <a href="#macedonia-tab" class="places__item places__item--macedonia">
           <figure class="places__figure">
             <picture>
               <source media="(min-resolution: 144dpi), (min-resolution: 1.5dppx)" srcset="img/macedonia-2x.jpg">
@@ -79,7 +79,7 @@
             <figcaption class="places__caption">Македония</figcaption>
           </figure>
         </a>
-        <a href="#" class="places__item places__item--chern">
+        <a href="#chern-tab" class="places__item places__item--chern">
           <figure class="places__figure">
             <picture>
               <source media="(min-resolution: 144dpi), (min-resolution: 1.5dppx)" srcset="img/chern-2x.jpg">
@@ -88,11 +88,11 @@
             <figcaption class="places__caption">Черногория</figcaption>
           </figure>
         </a>
-        <a href="#" class="places__item">
+        <a href="#croatia-tab" class="places__item">
           <figure class="places__figure">
             <picture>
-              <source media="(min-resolution: 144dpi), (min-resolution: 1.5dppx)" srcset="img/choratia-2x.jpg">
-              <img class="places__image" src="img/choratia-1x.jpg" width="350" height="430" alt="Хорватия">
+              <source media="(min-resolution: 144dpi), (min-resolution: 1.5dppx)" srcset="img/croatia-2x.jpg">
+              <img class="places__image" src="img/croatia-1x.jpg" width="350" height="430" alt="Хорватия">
             </picture>
             <figcaption class="places__caption">Хорватия</figcaption>
           </figure>
@@ -102,14 +102,14 @@
     <div class="wrapper">
       <section class="country container">
         <h2 class="country__title visually-hidden">Описание стран</h2>
-        <div class="country__tabs">
-          <a class="country__tab country__tab--active" href="#greece">Греция</a>
-          <a class="country__tab" href="#albania">Албания</a>
-          <a class="country__tab" href="#macedonia">Македония</a>
-          <a class="country__tab" href="#chern">Черногория</a>
-          <a class="country__tab" href="#chroatia">Хорватия</a>
+        <div class="country__tabs" id="tabs">
+          <a class="country__tab country__tab--active" id="greece-tab" href="#greece">Греция</a>
+          <a class="country__tab" id="albania-tab" href="#albania">Албания</a>
+          <a class="country__tab" id="macedonia-tab" href="#macedonia">Македония</a>
+          <a class="country__tab" id="chern-tab" href="#chern">Черногория</a>
+          <a class="country__tab" id="croatia-tab" href="#croatia">Хорватия</a>
         </div>
-        <section class="country__details" id="greece">
+        <section class="country__details country__details--active" id="greece">
           <div class="country__wrapper">
             <h3 class="country__subtitle">Греция</h3>
             <p class="country__description">
@@ -136,13 +136,130 @@
               Ощущение такое, как будто стоишь на краю света!
             </p>
             <div class="country__feedback-author">
-              <img src="img/avatar.jpg" alt="Фото пользователя" class="country__feedback-avatar" width="38" height="38">
+              <img src="img/vlada-1x.jpg" alt="Фото пользователя" class="country__feedback-avatar" width="38" height="38" srcset="img/vlada-2x.jpg 2x">
               <span class="country__feedback-name">Влада Голицина</span>
             </div>
           </div>
         </section>
+        <section class="country__details" id="albania">
+          <div class="country__wrapper">
+            <h3 class="country__subtitle">Албания</h3>
+            <p class="country__description">
+              В Албании мы посетим Курорт Ксамиль.
+              Этот курорт поразит вас чистейшей водой и удивительным пляжем.
+              Вначале кажется, что на пляже вас встречает обычный, правда невероятно белоснежный и слишком крупный песок.
+              Однако, присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого состояния.
+            </p>
+            <a href="#" class="country__button">Купить тур сейчас</a>
+          </div>
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/albania-detailed-1x.jpg 1x, img/albania-detailed-2x.jpg 2x">
+            <source media="(max-width: 1023px)" srcset="img/albania-detailed-1x.jpg 1x, img/albania-detailed-2x.jpg 2x">
+            <img class="country__image" src="img/albania-detailed-1x.jpg" width="430" height="596" srcset="img/albania-detailed-2x.jpg 2x" alt="Албания">
+          </picture>
+          <div class="country__feedback-card">
+            <h4 class="country__feedback-title">Отзывы</h4>
+            <p class="country__feedback-text">
+              Замечательный курорт, обязательно стоит посетить.
+              В следующий раз возьму с собой сестру,
+              чтобы тоже смогла вкусить все красоты природы :)
+            </p>
+            <div class="country__feedback-author">
+              <img src="img/marishka-1x.jpg" alt="Фото пользователя" class="country__feedback-avatar" width="38" height="38" srcset="img/marishka-2x.jpg 2x">
+              <span class="country__feedback-name">Маришка</span>
+            </div>
+          </div>
+        </section>
+        <section class="country__details" id="macedonia">
+          <div class="country__wrapper">
+            <h3 class="country__subtitle">Македония</h3>
+            <p class="country__description">
+              В Македонии нашей целью будет посетить Палаошник, который расположился
+              в удивительно красивой лесистой местности
+              возле Охридского озера и Самуиловой твердыни.
+              А также мы заберемся на вершину горы Татичев Камен
+              где находится  археологический памятник Кокино в длину около 100 метров.
+            </p>
+            <a href="#" class="country__button">Купить тур сейчас</a>
+          </div>
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/macedonia-detailed-1x.jpg 1x, img/macedonia-detailed-2x.jpg 2x">
+            <source media="(max-width: 1023px)" srcset="img/macedonia-detailed-1x.jpg 1x, img/macedonia-detailed-2x.jpg 2x">
+            <img class="country__image" src="img/macedonia-detailed-1x.jpg" width="430" height="596" srcset="img/macedonia-detailed-2x.jpg 2x" alt="Македония">
+          </picture>
+          <div class="country__feedback-card">
+            <h4 class="country__feedback-title">Отзывы</h4>
+            <p class="country__feedback-text">
+              Я бы сказал необычное старое здание. В архитектуре я не разбираюсь,
+              но подъем в гору был очень веселым так как люди оказались легкими и
+              заводными. Красота природы впечатлила, особенно после долгого пути в гору.
+            </p>
+            <div class="country__feedback-author">
+              <img src="img/mihail-1x.jpg" alt="Фото пользователя" class="country__feedback-avatar" width="38" height="38" srcset="img/mihail-2x.jpg 2x">
+              <span class="country__feedback-name">Михаил Кузьмин</span>
+            </div>
+          </div>
+        </section>
+        <section class="country__details" id="chern">
+          <div class="country__wrapper">
+            <h3 class="country__subtitle">Черногория</h3>
+            <p class="country__description">
+              Черногория удивит нас самым большим в Европе каньоном реки Тара,
+              который в некоторых местах высотой берегов доходит до 1300 метров,
+              а шириной не превышает трех. При этом длина каньона составляет 80 км.
+            </p>
+            <a href="#" class="country__button">Купить тур сейчас</a>
+          </div>
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/chern-detailed-1x.jpg 1x, img/chern-detailed-2x.jpg 2x">
+            <source media="(max-width: 1023px)" srcset="img/chern-detailed-1x.jpg 1x, img/chern-detailed-2x.jpg 2x">
+            <img class="country__image" src="img/chern-detailed-1x.jpg" width="430" height="596" srcset="img/chern-detailed-2x.jpg 2x" alt="Черногория">
+          </picture>
+          <div class="country__feedback-card">
+            <h4 class="country__feedback-title">Отзывы</h4>
+            <p class="country__feedback-text">
+              Неописуемой красоты каньон!
+              Ничего прекраснее в жизни не видела, разве что в фильмах :) Всем советую
+            </p>
+            <div class="country__feedback-author">
+              <img src="img/nastya-1x.jpg" alt="Фото пользователя" class="country__feedback-avatar" width="38" height="38" srcset="img/nastya-2x.jpg 2x">
+              <span class="country__feedback-name">Анастасия Мей</span>
+            </div>
+          </div>
+        </section>
+        <section class="country__details" id="croatia">
+          <div class="country__wrapper">
+            <h3 class="country__subtitle">Хорватия</h3>
+            <p class="country__description">
+              В Хорватии мы посетим необычайную пещеру названную Бередине.
+              Ее подземный мир увлечет вас на 80-ти метровую глубину через
+              5 освещенных залов, украшенных удивительными нерукотворными
+              скульптурами —  сталактитами и сталагмитами —  формировавшимися
+              тысячи и тысячи лет.
+            </p>
+            <a href="#" class="country__button">Купить тур сейчас</a>
+          </div>
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/croatia-detailed-1x.jpg 1x, img/croatia-detailed-2x.jpg 2x">
+            <source media="(max-width: 1023px)" srcset="img/croatia-detailed-1x.jpg 1x, img/croatia-detailed-2x.jpg 2x">
+            <img class="country__image" src="img/croatia-detailed-1x.jpg" width="430" height="596" srcset="img/croatia-detailed-2x.jpg 2x" alt="Хорватия">
+          </picture>
+          <div class="country__feedback-card">
+            <h4 class="country__feedback-title">Отзывы</h4>
+            <p class="country__feedback-text">
+              Мы поехали всей семьей, я, моя жена и родители.
+              Пещера просто незабываема! А то, что все это формировалось
+              тысячелетиями, мега необычно. Первоначально даже не верилось,
+              но натур ни с чем не спутать по итогу :)
+            </p>
+            <div class="country__feedback-author">
+              <img src="img/vladimir-1x.jpg" alt="Фото пользователя" class="country__feedback-avatar" width="38" height="38" srcset="img/vladimir-2x.jpg 2x">
+              <span class="country__feedback-name">Владимир Мулицин</span>
+            </div>
+          </div>
+        </section>
       </section>
-      <section class="price container">
+      <section class="price container" id="prices">
         <h2 class="price__title visually-hidden">Наши цены</h2>
         <div class="price__card price__card--hovered">
           <h3 class="price__subtitle">Комплексный <span>$1999</span></h3>
@@ -291,6 +408,7 @@
       </p>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
