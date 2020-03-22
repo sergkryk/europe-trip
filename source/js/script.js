@@ -1,3 +1,5 @@
+/* eslint-env node */
+/* eslint-disable no-unused-vars */
 'use strict';
 // >>>>>>>>>>>>>>>>>>>>>>>>>> главное меню <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
@@ -150,5 +152,18 @@
     evt.preventDefault();
     openModal(successPopup);
   });
+})();
 
+// >>>>>>>>>>>>>>>>>>>>>>> плавный скролл <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+(function () {
+  var SmoothScroll = require('smooth-scroll');
+  var smoothScroll = new SmoothScroll('a[href*="#"]');
+})();
+
+// // >>>>>>>>>>>>>>>>>>>>>>> svg в ie 11 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+(function () {
+  var svg4everybody = require('svg4everybody');
+  svg4everybody();
 })();

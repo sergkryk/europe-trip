@@ -6,6 +6,9 @@
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",
     "browser-sync": "2.26.x",
+    "browserify": "16.5.0",
+    "eslint": "4.16.0",
+    "eslint-config-htmlacademy": "0.4.x",
     "gulp": "4.0.x",
     "gulp-csso": "^3.0.1",
     "gulp-imagemin": "^5.0.3",
@@ -21,8 +24,7 @@
     "posthtml-include": "^1.2.0",
     "stylelint": "9.10.x",
     "stylelint-config-htmlacademy": "0.1.x",
-    "eslint": "4.16.0",
-    "eslint-config-htmlacademy": "0.4.x"
+    "vinyl-source-stream": "2.0.0"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
@@ -51,6 +53,8 @@
     "node": "8.15"
   },
   "dependencies": {
-    "del": "^4.1.1"
+    "del": "^4.1.1",
+    "smooth-scroll": "^16.1.2",
+    "svg4everybody": "^2.1.9"
   }
 }
