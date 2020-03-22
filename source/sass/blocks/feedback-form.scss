@@ -82,11 +82,6 @@
 
 .form__input {
   width: 100%;
-  border: 1px solid rgba(41, 54, 66, 0.3);
-  padding: 15px;
-
-  font-size: 14px;
-  line-height: 17px;
 }
 
 .form__input--star {
@@ -95,20 +90,7 @@
 
 .form__button {
   margin: 0 auto;
-  display: inline-block;
-  vertical-align: middle;
-
   padding: 18px 40px 17px;
-
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 15px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #ffffff;
-
-  background-color: $main-color;
-  border: none;
 }
 
 @media (max-width: $desktop-width) {

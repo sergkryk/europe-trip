@@ -1,0 +1,76 @@
+.buy-popup {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100vh;
+
+  background-color: rgba(41, 54, 66, 0.6);
+}
+
+.buy-popup__form {
+  position: relative;
+  width: 728px;
+  padding: 72px 61px 89px 397px;
+  background-color: #fbf8f8;
+  display: flex;
+  flex-direction: column;
+
+  background-image: url("../img/buy-popup-1x.jpg");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/buy-popup-2x.jpg");
+  }
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.buy-popup__title {
+  @include reset;
+  margin-bottom: 50px;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 170%;
+  text-align: center;
+}
+
+.buy-popup__input {
+  width: 100%;
+  padding: 15px 15px 16px 15px;
+  margin-bottom: 20px;
+}
+
+.buy-popup__button {
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 39px;
+}
+
+.buy-popup__label--star {
+  position: relative;
+  z-index: 10;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    left: 17px;
+    top: 5px;
+
+    width: 12px;
+    height: 12px;
+
+    background-image: url("../img/star.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.buy-popup__input--star {
+  padding-left: 31px;
+}

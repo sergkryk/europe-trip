@@ -93,24 +93,19 @@
 }
 
 .country__button {
-  display: inline-block;
-  vertical-align: middle;
+  // display: inline-block;
+  // vertical-align: middle;
 
   padding: 30px 40px;
 
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 15px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #ffffff;
+  // font-weight: 600;
+  // font-size: 12px;
+  // line-height: 15px;
+  // letter-spacing: 2px;
+  // text-transform: uppercase;
+  // color: #ffffff;
 
-  background-color: $main-color;
-
-  &:hover {
-    opacity: 1;
-    background-color: $secondary-color;
-  }
+  // background-color: $main-color;
 }
 
 .country__image {

@@ -1,0 +1,33 @@
+.thanks-popup {
+  position: fixed;
+  z-index: 10;
+
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100vh;
+
+  background-color: rgba(41, 54, 66, 0.6);
+}
+
+.thanks-popup__wrapper {
+  position: relative;
+  width: 728px;
+  padding: 179px 164px 179px 165px;
+  background-color: #fbf8f8;
+  text-align: center;
+}
+
+.thanks-popup__title {
+  @include reset;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 43px;
+  text-align: center;
+  color: #48494D;
+}

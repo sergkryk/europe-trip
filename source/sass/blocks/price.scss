@@ -88,9 +88,6 @@
 }
 
 .price__link {
-  display: inline-block;
-  vertical-align: middle;
-
   width: 100%;
   padding: 30px 68px;
 
@@ -98,15 +95,6 @@
     padding: 30px 20px;
     text-align: center;
   }
-
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 15px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #ffffff;
-
-  background-color: $main-color;
 }
 
 
