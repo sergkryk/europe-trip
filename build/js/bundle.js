@@ -180,13 +180,17 @@ window.Element&&!Element.prototype.closest&&(Element.prototype.closest=function(
 (function () {
   var buyNowButtons = document.querySelectorAll('.buy-now');
   var siteBody = document.querySelector('body');
-  var siteFormButton = document.querySelector('.form__button');
+
+  var pageForm = document.querySelector('.form__card');
+  var pagePhoneInput = pageForm.querySelector('[name=phone]');
+  var pageEmailInput = pageForm.querySelector('[name=email]');
+  var pageFormSubmit = pageForm.querySelector('[type=submit]');
 
   var buyPopup = document.querySelector('.buy-popup');
-  var form = buyPopup.querySelector('.buy-popup__form');
-  var phoneInput = buyPopup.querySelector('[name=phone]');
-  var emailInput = buyPopup.querySelector('[name=email]');
-  var submitButton = buyPopup.querySelector('.buy-popup__button');
+  var popupForm = buyPopup.querySelector('.buy-popup__form');
+  var popupPhoneInput = buyPopup.querySelector('[name=phone]');
+  var popupEmailInput = buyPopup.querySelector('[name=email]');
+  var popupSubmitButton = popupForm.querySelector('.buy-popup__button');
   var popupCloseBtn = buyPopup.querySelector('.buy-popup__close');
 
   var successPopup = document.querySelector('.thanks-popup');
@@ -239,31 +243,57 @@ window.Element&&!Element.prototype.closest&&(Element.prototype.closest=function(
     element.addEventListener('click', function (evt) {
       evt.preventDefault();
       openModal(buyPopup);
-      phoneInput.focus();
+      popupPhoneInput.focus();
 
       if (phoneStorage) {
-        phoneInput.value = phoneStorage;
-        emailInput.focus();
+        popupPhoneInput.value = phoneStorage;
+        popupEmailInput.focus();
       }
 
       if (emailStorage) {
-        emailInput.value = emailStorage;
-        submitButton.focus();
+        popupEmailInput.value = emailStorage;
+        popupSubmitButton.focus();
       }
     });
   });
 
-  form.addEventListener('submit', function (evt) {
+
+  var check = function (form) {
+    var inputs = form.querySelectorAll('input');
+    var labels = form.querySelectorAll('label');
+    var valid = true;
+
+    labels.forEach(function (el) {
+      el.classList.remove('invalid');
+    });
+
+    inputs.forEach(function (el, index) {
+      if (!el.checkValidity()) {
+        labels[index].classList.add('invalid');
+        el.focus();
+        valid = false;
+      }
+    });
+    return valid;
+  };
+
+  popupSubmitButton.addEventListener('click', function (evt) {
     evt.preventDefault();
-    localStorage.setItem('phone', phoneInput.value);
-    localStorage.setItem('email', emailInput.value);
-    closeModal(buyPopup);
-    openModal(successPopup);
+    if (check(popupForm)) {
+      localStorage.setItem('phone', popupPhoneInput.value);
+      localStorage.setItem('email', popupEmailInput.value);
+      closeModal(buyPopup);
+      openModal(successPopup);
+    }
   });
 
-  siteFormButton.addEventListener('click', function (evt) {
+  pageFormSubmit.addEventListener('click', function (evt) {
     evt.preventDefault();
-    openModal(successPopup);
+    if (check(pageForm)) {
+      localStorage.setItem('phone', pagePhoneInput.value);
+      localStorage.setItem('email', pageEmailInput.value);
+      openModal(successPopup);
+    }
   });
 })();
 

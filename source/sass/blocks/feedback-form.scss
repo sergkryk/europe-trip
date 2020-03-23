@@ -8,12 +8,15 @@
   @media (max-width: 1210px) {
     padding-right: 30px;
   }
+
   background-image: url("../img/sunset-1x.jpg");
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
     background-image: url("../img/sunset-2x.jpg");
     background-size: contain;
   }
+
   background-repeat: no-repeat;
   background-position: left 31px top;
 
@@ -61,7 +64,7 @@
   }
 }
 
-.form__label--star {
+.form__label--required {
   position: relative;
   z-index: 10;
 
@@ -84,9 +87,9 @@
   width: 100%;
 }
 
-.form__input--star {
-  padding-left: 31px;
-}
+// .form__input--star {
+//   padding-left: 31px;
+// }
 
 .form__button {
   margin: 0 auto;

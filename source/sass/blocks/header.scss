@@ -37,6 +37,10 @@
   }
 }
 
+.header__menu-icon {
+  display: none;
+}
+
 .header__link--red {
   color: $main-color;
 }
@@ -111,6 +115,7 @@
   }
 
   .header__wrapper {
+    min-width: $mobile-width;
     width: 100%;
     position: relative;
     z-index: 10;
@@ -140,6 +145,7 @@
 
   .header__link {
     display: block;
+    position: relative;
     margin: 30px 0 30px;
     padding: 17px 16px;
     font-weight: 600;
@@ -148,6 +154,13 @@
     color: #48494d;
 
     background-color: #fbf8f8;
+  }
+
+  .header__menu-icon {
+    display: block;
+    position: absolute;
+    top: calc(50% - 7.5px);
+    right: 10px;
   }
 
   .header__link--phone {
