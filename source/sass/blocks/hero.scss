@@ -109,6 +109,7 @@
 @media (max-width: $tablet-width) {
   .hero {
     position: relative;
+    background-color: transparent;
     background-image: none;
 
     &::after {
@@ -129,6 +130,7 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: left 51% top;
+      background-color: #628cb7;
     }
   }
 
