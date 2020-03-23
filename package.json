@@ -4,7 +4,7 @@
   "description": "Стартовый шаблон сборки Лиги А",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
-    "autoprefixer": "9.5.x",
+    "autoprefixer": "^9.7.4",
     "browser-sync": "2.26.x",
     "browserify": "16.5.0",
     "eslint": "4.16.0",

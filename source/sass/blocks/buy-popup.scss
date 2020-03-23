@@ -74,3 +74,18 @@
 .buy-popup__input--star {
   padding-left: 31px;
 }
+
+@media (max-width: $desktop-width) {
+  .buy-popup__form {
+    width: 90%;
+    padding: 100px 16px 185px;
+    background-image: none;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .buy-popup__form {
+    width: 100%;
+    background-color: #ffffff;
+  }
+}

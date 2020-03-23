@@ -11,8 +11,7 @@
 
   background-image: url("../img/sunset-1x.jpg");
 
-  @media (min-resolution: $retina-dpi),
-  (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/sunset-2x.jpg");
     background-size: contain;
   }
@@ -87,10 +86,6 @@
   width: 100%;
 }
 
-// .form__input--star {
-//   padding-left: 31px;
-// }
-
 .form__button {
   margin: 0 auto;
   padding: 18px 40px 17px;
@@ -105,6 +100,7 @@
     padding: 70px 55px 75px 55px;
     background-position: left top;
     background-size: cover;
+    background-color: #FFAB96;
   }
 
   .form__card {
@@ -114,10 +110,6 @@
 
   .form__label {
     margin-bottom: 21px;
-  }
-
-  .form__input--star {
-    padding-left: 25px;
   }
 
   .form__button {
